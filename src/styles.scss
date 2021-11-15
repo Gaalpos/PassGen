@@ -1,0 +1,51 @@
+$primary-color: #007bff;
+$second-color: #ffffff;
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	margin: 0 0 0.4em 0;
+}
+
+#pass {
+	color: red;
+}
+
+// To remove spinners in Chrome, Safari, Edge, Opera
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+// To remove spinners in Firefox
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+#length {
+	width: 2.5 + 2.5 em;
+	border: 1px solid $primary-color;
+	border-radius: 0.2em;
+	color: $primary-color;
+	padding: 0.2em;
+}
+
+#btn {
+	padding: 0.5em;
+	border: 1px solid $primary-color;
+	border-radius: 0.3em;
+	background-color: $second-color;
+	color: $primary-color;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+#btn:hover {
+	color: $second-color;
+	background-color: $primary-color;
+	cursor: pointer;
+}
