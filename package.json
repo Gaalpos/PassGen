@@ -1,5 +1,5 @@
 {
-	"name": "generadorcontrasenasseguras",
+	"name": "pass-gen",
 	"version": "1.0.0",
 	"description": "App to generate secure passwords",
 	"main": "index.js",
@@ -20,6 +20,7 @@
 	"author": "Abel Garcia",
 	"license": "ISC",
 	"devDependencies": {
+		"babel-loader": "^8.2.3",
 		"css-loader": "^6.5.1",
 		"express": "^4.17.1",
 		"html-webpack-plugin": "^5.5.0",
