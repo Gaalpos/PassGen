@@ -12,7 +12,7 @@ app.listen(PORT, () => {
     console.log('Servidor arrancado en el puerto ' + PORT)
 })
 app.get('/', (req, res) => {
-    res.send('<h1>SERVER INICIADO</h1>')
+    res.sendFile(__dirname + '/src/index.html')
 })
 
 app.get('/password', (req, res) => {
