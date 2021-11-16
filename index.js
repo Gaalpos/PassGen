@@ -17,10 +17,12 @@ app.listen(PORT, () => {
 app.get('/password', (req, res) => {
     let pass = generatePass()
     res.json(
-        {
-            "pass": pass,
-            "passLength": pass.length
-        }
+        [
+            {
+                "pass": pass,
+                "passLength": pass.length
+            }
+        ]
     )
     res.send(generatePass())
 })
@@ -28,10 +30,12 @@ app.get('/password', (req, res) => {
 app.get('/password/:lenght', (req, res) => {
     let pass = generatePass(req.params.lenght)
     res.json(
-        {
-            "pass": pass,
-            "passLength": pass.length
-        }
+        [
+            {
+                "pass": pass,
+                "passLength": pass.length
+            }
+        ]
     )
 })
 
