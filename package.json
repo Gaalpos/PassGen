@@ -19,6 +19,9 @@
 	],
 	"author": "Abel Garcia",
 	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1"
+	} ,
 	"devDependencies": {
 		"babel-loader": "^8.2.3",
 		"css-loader": "^6.5.1",
