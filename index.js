@@ -11,9 +11,6 @@ const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
     console.log('Servidor arrancado en el puerto ' + PORT)
 })
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/src/index.html')
-})
 
 app.get('/password', (req, res) => {
     let pass = generatePass()
