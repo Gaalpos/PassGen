@@ -7,9 +7,14 @@ const symbols = ['.', ':', ';', '*', '&', '-', '=', '+', '(', ')', '%', '$', '#'
 
 const __dirname = path.resolve()
 const app = express()
+
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
     console.log('Servidor arrancado en el puerto ' + PORT)
+})
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/build/index.html')
 })
 
 app.get('/password', (req, res) => {
