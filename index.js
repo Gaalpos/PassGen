@@ -6,7 +6,7 @@ const numbers = [1, 0, 2, 9, 3, 8, 4, 7, 6, 5]
 const symbols = ['.', ':', ';', '*', '&', '-', '=', '+', '(', ')', '%', '$', '#', '@', '!', '?', '/', '\\']
 
 const app = express()
-app.use(cors)
+app.use(cors())
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
