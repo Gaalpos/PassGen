@@ -7,9 +7,9 @@ const symbols = ['.', ':', ';', '*', '&', '-', '=', '+', '(', ')', '%', '$', '#'
 
 const __dirname = path.resolve()
 const app = express()
-
-app.listen(4000, () => {
-    console.log('Servidor arrancado en el puerto 4000')
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+    console.log('Servidor arrancado en el puerto ' + PORT)
 })
 app.get('/', (req, res) => {
     res.send('<h1>SERVER INICIADO</h1>')
