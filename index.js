@@ -11,6 +11,9 @@ const app = express()
 app.listen(4000, () => {
     console.log('Servidor arrancado en el puerto 4000')
 })
+app.get('/', (req, res) => {
+    res.sendFile('./build/index.html')
+})
 
 app.get('/password', (req, res) => {
     let pass = generatePass()
