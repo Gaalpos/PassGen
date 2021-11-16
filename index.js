@@ -1,12 +1,12 @@
 import express from 'express'
-import path from 'path'
+import cors from 'cors'
 
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'y', 'x', 'z']
 const numbers = [1, 0, 2, 9, 3, 8, 4, 7, 6, 5]
 const symbols = ['.', ':', ';', '*', '&', '-', '=', '+', '(', ')', '%', '$', '#', '@', '!', '?', '/', '\\']
 
-const __dirname = path.resolve()
 const app = express()
+app.use(cors)
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () => {
