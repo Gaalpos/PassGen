@@ -12,7 +12,7 @@ app.listen(4000, () => {
     console.log('Servidor arrancado en el puerto 4000')
 })
 app.get('/', (req, res) => {
-    res.sendFile('./build/index.html')
+    res.send('<h1>SERVER INICIADO</h1>')
 })
 
 app.get('/password', (req, res) => {
