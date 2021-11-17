@@ -1,0 +1,43 @@
+body {
+        background: url(images/crip.jpg) 0 0 / 1440px 1080px repeat;
+      
+      
+}
+
+.container {
+    color: rgb(255, 255, 255);
+    border: 5px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    text-align: center;
+    background-color: #3b3b3be3;
+   
+    
+    border-radius: 8px;
+}
+
+.button {
+    border-radius: 5px;
+}
+
+.input {
+    
+    border-radius: 5px;
+}
+
+.footer {
+   margin-top: 7rem;
+    color: rgb(255, 255, 255);
+    border: 5px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    text-align: center;
+    background-color: #3b3b3be3;
+    border-radius: 8px;
+    
+}
+

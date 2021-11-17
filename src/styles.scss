@@ -1,6 +1,10 @@
 $primary-color: #007bff;
 $second-color: #ffffff;
 
+
+body{
+	background-color: gray;
+}
 .container {
 	display: flex;
 	flex-direction: column;
